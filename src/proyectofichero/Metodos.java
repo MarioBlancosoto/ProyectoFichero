@@ -26,7 +26,7 @@ public class Metodos {
             fichero = new ObjectOutputStream(new FileOutputStream(nomeFich));
              for(int i=0;i<3;i++){
             Alumno al = new Alumno(JOptionPane.showInputDialog(null,"Introduce o nome"),Integer.parseInt(JOptionPane.showInputDialog("introduce as notas")));
-            if(al.getNotas()>5){
+            if(al.getNotas()>=5){
             Alumno alc = new Alumno(JOptionPane.showInputDialog(null,"Introduce o nome"),Integer.parseInt(JOptionPane.showInputDialog("introduce as notas"))); 
             fich.writeObject(alc);
             }
